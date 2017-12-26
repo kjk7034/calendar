@@ -1,0 +1,58 @@
+table {
+  clear:both;
+  table-layout: fixed;
+  width:100%;
+  border:1px solid rgb(220,220,255);
+  border-radius:3px;
+  border-collapse:collapse;
+  color:#444;
+}
+td {
+  text-align:center;
+  vertical-align:middle;
+  border-right:1px solid rgb(220,220,255);
+  border-top:1px solid rgb(220,220,255);
+  padding: 10px;
+  word-wrap: break-word;
+}
+td .message {
+  display: block;
+  color: orange;
+  font-weight: bold;
+}
+th {
+  height:48px;
+  text-align:center;
+  vertical-align:middle;
+  border-right:1px solid rgb(220,220,255);
+  border-top:1px solid rgb(220,220,255);
+}
+
+td.prev, td.next {
+  color:#ccc;
+}
+td.normal {}
+td.today {
+  font-weight:700;
+  color:rgb(40,40,59);
+  font-size:1.5em;
+  background-color: #eee;
+}
+td.selected {
+  background-color: yellowgreen
+}
+#calendar-layer {
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  margin-left: -150px;
+  width: 300px;
+  border: 3px solid #000;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: beige;
+  text-align: center;
+}
+#calendar-layer .calendar-layer-btns {
+  margin-top: 10px;
+}
